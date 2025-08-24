@@ -1,112 +1,130 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Desi Tote Drop – Drop 01</title>
+  <title>Desi Tote Drop</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Baloo+2:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
-      background-color: #fdf7f0;
-      color: #222;
-      text-align: center;
+      background: #fff9ec;
+      font-family: 'Baloo 2', cursive;
+      color: #2b2b2b;
     }
 
     header {
-      padding: 2rem 1rem;
-      background: #ffe8cc;
-      border-bottom: 2px solid #f7c48b;
+      text-align: center;
+      padding: 60px 20px 20px;
     }
 
-    header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: #ff5e00;
+      margin: 0;
     }
 
-    header p {
+    .tagline {
       font-size: 1.1rem;
-      color: #555;
+      margin-top: 10px;
+      color: #6e4a1e;
     }
 
-    section {
-      padding: 2rem 1.5rem;
-      max-width: 600px;
-      margin: auto;
+    .story {
+      max-width: 700px;
+      margin: 30px auto;
+      font-size: 1.1rem;
+      line-height: 1.8;
+      text-align: center;
+      color: #443c3c;
+      padding: 0 20px;
     }
 
-    .hero-img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin-bottom: 2rem;
+    .images {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin: 50px 0;
     }
 
-    .waitlist {
-      background: #fff3e6;
-      padding: 2rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
-      margin-top: 2rem;
-    }
-
-    input[type="email"] {
-      padding: 0.75rem;
-      width: 80%;
+    .images img {
+      width: 90%;
       max-width: 400px;
-      margin: 1rem 0;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      font-size: 1rem;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     }
 
-    button {
-      background: #ff7733;
-      color: white;
-      padding: 0.75rem 1.5rem;
+    .btn {
+      display: inline-block;
+      background: #ff5e00;
+      color: #fff;
+      padding: 14px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
       font-size: 1rem;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+      transition: all 0.3s ease;
+      margin: 20px auto;
+      animation: pulse 2s infinite;
     }
 
-    button:hover {
-      background: #e65c00;
+    .btn:hover {
+      background: #e64c00;
+      transform: scale(1.05);
+    }
+
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 94, 0, 0.4); }
+      70% { box-shadow: 0 0 0 12px rgba(255, 94, 0, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 94, 0, 0); }
     }
 
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #888;
-      padding-bottom: 2rem;
+      text-align: center;
+      font-size: 0.95rem;
+      color: #7b5a3b;
+      padding: 30px 20px;
+      background: #fff3db;
+      border-top: 1px dashed #e0c7a2;
+    }
+
+    @media (min-width: 768px) {
+      .images {
+        flex-direction: row;
+        justify-content: center;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Drop 01: The Desi Tote</h1>
-    <p>Where Indian street culture meets global fashion energy.</p>
+    <h1>desi tote drop</h1>
+    <p class="tagline">Limited cultural drops — inspired by India, hyped like sneakers</p>
   </header>
 
-  <section>
-    <img src="https://i.imgur.com/ZOWKjSo.jpeg" alt="Desi Tote" class="hero-img" />
-
-    <h2>Limited Pieces. Loud Statements.</h2>
-    <p>This is not your average bag. Think ration sacks meets truck art meets streetwear.</p>
-    <p>Each tote is part of a limited drop — no restocks, ever.</p>
-
-    <div class="waitlist">
-      <h3>Be the First to Know</h3>
-      <form name="waitlist" method="POST" data-netlify="true">
-        <input type="email" name="email" placeholder="Enter your email to join the waitlist" required />
-        <br />
-        <button type="submit">Join Waitlist</button>
-      </form>
-    </div>
+  <section class="story">
+    <p>
+      Each bag is more than a tote — it’s a statement. From truck slogans to local art, our designs celebrate the chaos, charm, and color of everyday India.
+      <br/><br/>
+      We don’t restock. When it's gone, it's gone.
+    </p>
   </section>
 
+  <section class="images">
+    <img src="Horn Okay Plese Image.jpg" alt="Horn OK Please Tote" />
+    <img src="Rural Tote Image.jpg" alt="Rural India Tote" />
+  </section>
+
+  <div style="text-align: center;">
+    <a href="#" class="btn">Join the Waitlist</a>
+  </div>
+
   <footer>
-    Made with chai stains & loud aunties · © 2025 Desi Tote Project
+    Handmade vibes · Global drop · Follow us @desi.tote
   </footer>
+
 </body>
 </html>
